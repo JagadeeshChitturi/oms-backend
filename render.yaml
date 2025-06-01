@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: oms-backend
+    env: java
+    repo: https://github.com/JagadeeshChitturi/oms-backend
+    branch: main
+    buildCommand: ./mvnw clean install
+    startCommand: java -jar target/backend-0.0.1-SNAPSHOT.jar
+    plan: free
